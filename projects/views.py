@@ -4,4 +4,8 @@ from django.template import Context, Template
 from django.template.loader import get_template
 
 def index(request):
-    return HttpResponse('<h1>hello world!</h1>')
+    tag = "<h1>hello world</h1>"
+    context = {
+        "hello": tag,
+    }
+    return render(request, 'projects/index.html', context)
