@@ -7,3 +7,6 @@ class Project(models.Model):
     progress_made = models.CharField(max_length=454)
     additional_info = models.CharField(max_length=454)
     slack_channel = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.title
