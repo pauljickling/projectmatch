@@ -4,4 +4,5 @@ projectmatch/secret.json
 projectmatch/__pycache__
 pycache__
 projects/__pycache__
+projects/migrations/__pycache__
 geckodriver.log
