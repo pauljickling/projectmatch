@@ -4,6 +4,9 @@
   <title>Project Match</title>
 </head>
 <body>
-  {{ hello }}
+  {% for project in projects %}
+  <h1>{{project}}</h1>
+  <p>{{project.summary}}</p>
+  {% endfor %}
 </body>
 </html>
