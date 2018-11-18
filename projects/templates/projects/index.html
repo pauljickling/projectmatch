@@ -2,9 +2,12 @@
 <html lang="en-US">
 <head>
   <title>Project Match</title>
+  {% load static %}
+  <link rel="stylesheet" href="{%static 'projectmatch.css' %}">
 </head>
 <body>
   <h1>Project Match</h1>
+  <button>Find Match</button>
   {% for project in projects %}
   <h2>{{project}}</h2>
   <p>{{project.summary}}</p>
