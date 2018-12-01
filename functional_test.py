@@ -1,8 +1,18 @@
 from selenium import webdriver
+import unittest
 
-browser = webdriver.Firefox()
-browser.get('http://localhost:8000')
+class NewTest(unittest.TestCase):
 
-assert 'Django' in browser.title, "Browser title was " + browser.title
+    def setUp(self):
+        self.browser = webdriver.Firefox()
 
-browser.quit()
+    def tearDown(self):
+        self.browser.quit()
+
+    def test_generally(self):
+        self.browser.get('http://localhost:8000')
+        set.assertIn('Project Match', self.browser.title)
+        self.fail('Finish the app')
+
+if __name__ == '__main__':
+    unittest.main(warnings='ignore')
