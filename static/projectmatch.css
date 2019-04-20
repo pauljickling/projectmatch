@@ -8,3 +8,13 @@ body {
   margin: 0 auto;
   padding: 10px;
 }
+
+div#tax-box {
+  display: flex;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+details {
+  padding: 5px;
+}

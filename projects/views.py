@@ -4,6 +4,7 @@ from django.template import Context, Template
 from django.template.loader import get_template
 from .models import Project
 
+
 def index(request):
     projects = Project.objects.all()
     context = {
